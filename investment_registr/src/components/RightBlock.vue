@@ -7,8 +7,8 @@
         <div class="right-container">
              <!-- <contact-details></contact-details> -->
              <!-- <investment-plans></investment-plans> -->
-
-            <investment-preferences></investment-preferences>
+            <router-view></router-view>
+            <!-- <investment-preferences></investment-preferences> -->
         </div>
         <footer-block></footer-block>
        
