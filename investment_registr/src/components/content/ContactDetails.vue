@@ -26,8 +26,8 @@
                         <div class="country-div">
                             <label for="country">Country</label>
                             <select name="country" id="country">
-                                <option value="AZE">AZE</option>
-                                <option value="TR">TR</option>
+                                <option value="AZE">Azerbaijan</option>
+                                <option value="TR">Turkie</option>
                             </select>
                         </div>
                     </form>
@@ -54,6 +54,11 @@
 <script>
 
 export default{
+    data(){
+        return{
+            
+        }
+    }
 
 
     
