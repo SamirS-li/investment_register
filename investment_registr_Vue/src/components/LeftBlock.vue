@@ -72,6 +72,7 @@
                 </div>
                 <div class="left-info">
                     <span><i></i></span>
+                    <div class="shadow"></div>
                     <p>We care about your time, that's why we created a 3-stage onboarding that will not take more than 5 minutes to complete</p>
                     <div class="author">
                         <h3>William Mac</h3>
@@ -190,6 +191,7 @@ export default{
     height: 40px;
     display: block;
     position: absolute;
+    z-index: 2;
     top: -17px;
     left: -11px;
     color: red;
@@ -210,6 +212,19 @@ export default{
     background-color: white;
     margin-top: 2px;
 }
+
+.shadow{
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    width: 141px;
+    height: 37px;
+    background-color: red;
+    box-sizing: border-box;
+    border-bottom: 37px solid white;
+    border-left: 141px solid #ebf2f8;
+}
+
 
 .left-info p {
     width: 230px;

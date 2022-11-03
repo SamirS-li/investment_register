@@ -8,7 +8,7 @@
                         </div>
                         <div class="footer-buttons">
                             <button class="skip-button" type="button">Skip for now</button>
-                            <button @click="nextPage" class="next-button" type="button">Next step <i></i></button>
+                            <button @click="nextPage" class="next-button" type="button">{{ nextTitle }}<i></i></button>
                         </div>
                     </div>
                 </div> 
@@ -23,6 +23,22 @@
 <script>
 
 export default{
+
+    data(){
+        return {
+            nextTitle:"Next step"
+        }
+    },
+    created(){
+
+            console.log("created ,,,,",  this.$router.currentRoute.name);
+            if( this.$router.currentRoute.name == "preferences"){
+                this.nextTitle = " Finish"
+            }else{
+
+            }
+        
+    },
     methods:{
         prevPage(){
             this.$router.push({name: this.$router.currentRoute.meta.prev})
